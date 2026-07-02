@@ -1,0 +1,311 @@
+/* هذا الي مطلوب يصير ثابت  */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap'); /* body font */
+@import url('https://fonts.cdnfonts.com/css/theo-van-doesburg'); /* head font for only h1 */
+@import url('https://fonts.cdnfonts.com/css/aealarabiya'); /*Arabic heading only */
+/* font-family: 'ae_AlArabiya', sans-serif; another font for later pls dont delet it  */
+
+*{
+ margin: 0;
+ padding: 0;
+}
+
+body{
+    background-color:#160e3f;
+    background-image: linear-gradient(to bottom,#160e3f,#160e3f, #271a68, #413389,#8477c4 );
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Tajawal', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    min-height: 100% 
+}
+.first {
+  background-color: #231257;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.first span:nth-child(1) img {
+  width: 150px;
+  height: auto;
+}
+
+.first span:nth-child(2) a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+hr{
+    border:1px solid #726dbc;
+}
+
+h1 {
+    font-family: 'Theo Van Doesburg', sans-serif;
+    color: #ede9e9;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 40px;
+    
+}
+
+nav ul {
+  font-weight:bolder;
+  list-style-type: none;
+  background-image:linear-gradient( to right,#31256c, #3765ad );
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #2E887F;
+}
+
+nav ul ul{
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding:0 ;
+  position: fixed ;
+  width: 10%;
+  
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul ul li{
+  
+  background-color: #599087;
+  
+}
+
+footer {
+  margin-top: 90px;
+  padding: 20px;
+  background-color: #197265;
+  text-align: center;
+  color: white;
+  font-family: 'Tajawal', sans-serif;
+  width: 100%;
+   clear: both;
+  position: relative;
+ 
+    
+}
+
+video {
+    position: relative;
+    z-index: -1000;
+    pointer-events: auto; 
+}
+
+
+.hrColor{
+  border-top: #726dbc;
+}
+
+
+
+
+
+
+
+/* نهايه الي مطلوب يصير ثابت  */
+
+
+
+/*ستايل كل مدينه */
+
+/*-------الفهرس-------*/
+/* الفهرس البسيط - سطر واحد */
+.tag {
+    margin-top: 5px;
+    text-align: center;
+    border-bottom: 1px solid rgba(180, 180, 180, 0.3); /* خط سفلي نحيف جداً */
+    margin-bottom: 20px;
+    white-space: nowrap; /* يضمن بقاءهم جنب بعض في سطر واحد */
+}
+
+.tag a {
+    text-decoration: none;
+    font-size: 16px; /* خط صغير وأنيق */
+    font-weight: 500;
+    color: #717171; /* لون رمادي هادئ */
+    margin: 0 60px; /* مسافة متساوية بين الكلمات */
+    margin-bottom: -10px;
+    transition: color 0.3s ease; /* تنعيم تغيير اللون */
+}
+
+.tag a:hover {
+    color: #C29696; /* يتغير للون الوردي/الذهبي الخاص بموقعك عند وضع الماوس */
+    border-bottom: 1px solid #C29696; /* ظهور خط نحيف تحت الكلمة عند الاختيار */
+}
+
+.city a {
+  font-weight: bolder;
+  text-decoration: none;
+  background-color: #6a1b9a;  
+  color: white;
+  padding: 6px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.city a:hover {
+  background-color: #2E887F;
+
+}
+
+.city {/*حدود صفحة كل مدينه */
+  margin: 0 100px;
+  padding: 40px;
+  min-height: 550px;
+ /* background-color: #726dbc;/*لون الخلفية*/
+ /* border-inline: 10px solid #ece0e0; /* لون الخط وعرضه ونوعه الي باليمين واليسار */
+}
+
+.city h1 {
+  padding-bottom: 2%;
+}
+
+.city p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: inherit;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+
+
+/*-------city Hotels--------*/
+
+.hotle-images {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hotle-images img {
+  width: 450px;
+  height: 250px;
+}
+
+.hotle-images h3 {
+  color: inherit;;
+  font-size: 20px;
+  margin-top: 8px;
+  padding-bottom:2%;
+}
+
+.hotle-images p {
+  font-size: 18px;
+  margin: -10px 0;
+  color: inherit;;
+  width: 450px;
+  height: 100px;
+  text-align: left;
+}
+
+/*-------اشياء مشتركه بينهم صفات*/
+
+.hotle-images, .small-images {
+  display: grid;
+  justify-items: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.hotle-images div,.small-images div {
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.hotle-images div:hover, .small-images div:hover {
+  transform: scale(0.95);
+}
+
+.hotle-images img, .small-images img {
+  border-radius: 10px;
+  display: block;
+}
+
+/*------Keep Exploring saudi-------*/
+
+.small-images {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.small-images img {
+  width: 350px;
+  height: 200px;
+}
+
+.small-images div {
+  background-color: rgba(93, 93, 93, 0.1);
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+}
+
+.small-images a{
+
+ background-color: transparent; 
+    padding: 0 ;                 
+    border-radius: 0 ;
+    display: block;
+}
+.small-images a:hover {
+  background-color: transparent;
+}
+
+.small-images h3 {
+  margin-top: 10px;
+  font-size: 25px;
+  color: white;
+}
+
+.keep {
+  margin-left: 95%;
+  margin-bottom: 2%;
+  font-weight: bolder;
+  color: white;
+}
+
+.explore-header {
+  display: flex;
+  justify-content: space-between; /* يخليهم واحد يسار والثاني يمين */
+  align-items: center; /* يخليهم بنفس المستوى عموديًا */
+  margin-bottom: 2%;
+}
+
+.explore-header a {
+  font-weight: bolder;
+  text-decoration: none;
+  background-color:  #6a1b9a;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+
+}
+
+.explore-header a:hover {
+  background-color: #2E887F;
+}
+
+
+
+
