@@ -7,3 +7,5 @@ can also book tourist packages and complete the online payment process securely.
 revenue model is based on a commission-based system, when a user books a service through our 
 platform, we receive a percentage of the payment from the service provider for every successful 
 booking.
+
+(/PROJ-IS-IS1460-BlankBusinessPlanTemplate-2-202526.pdf)
